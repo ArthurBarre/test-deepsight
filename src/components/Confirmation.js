@@ -4,27 +4,33 @@ class Confirmation extends Component {
     input: ''
   };
 
-  // input change handler
-  onInput = (e) => this.setState({
-    input: e.target.value
-  });
-
-  // submit handler
+  onInput = (e) => {
+    this.setState({
+      input: e.target.value
+    })
+    this.getValue(e.target.value)
+  };
+  getValue(elem) {
+    const newValue = elem;
+    return newValue;
+  }
   onSubmit = (e) => {
     e.preventDefault();
     this.props.onSubmit(this.state.input);
   }
 
+
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className="confirmation" onSubmit={this.onSubmit}>
         <input
-          // use value and onChange so it will be a controlled component
-          value={this.state.value}
+          value={this.state.input}
           onChange={this.onInput}
-          type="text"
-          placeholder="Type your text here" />
-        <button type="submit">Confirmation</button>
+          type="number"
+          className="confirmationInput"
+        />
+        <button
+          className="confirmationSubmit"><h5 className="confirmationSubmitTitle">Confirmation</h5></button>
       </form>
     )
   }

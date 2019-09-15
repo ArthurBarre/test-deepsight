@@ -22,7 +22,15 @@
 .forecastDate{
   width:100%;
   height:18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
   background: linear-gradient(270deg, #3FE5F7 0%, #2045FF 100%);
+}
+.forecastDateTitle{
+  color:white;
+  font-size: 24px;
 }
 .forecastContent{
   width:100%;
@@ -54,31 +62,81 @@
   width:60%;
   height:42%;
   display: flex;
-  -webkit-box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23); 
+  flex-direction: column;
   box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
   border-radius:8px;
+}
+.locationOpen{
+  width:60%;
+  height:130%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.5);
+  z-index: 4;
+  border-radius:8px;
+}
+.locationContainer{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.locationTitle{
+  margin-left:5%;
+  font-size: 20px;
+  color:#6B768C;
 }
 .text{
   font-size: 20px;
   color:#6B768C;
   margin: auto;
 }
+
 .boldText{
   font-size: 32px;
   color:#000;
   margin: auto;
 }
-.locationTitle{
-
+.locations{
+  
+}
+.locationText{
+  font-size: 18px;
+  color:#6B768C;
+  margin-bottom: 3%;
+  margin-left: 5%;
 }
 .dateWitness{
   width:20%;
   height:42%;
   display: flex;
-  flex-direction: row;
-  -webkit-box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23); 
+  flex-direction: column;
+ 
   box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
   border-radius:8px;
+}
+.dateWitnessOpen{
+  width:20%;
+  height:120%;
+  display: flex;
+  flex-direction: column;
+ 
+  box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
+  border-radius:8px;
+  z-index: 4;
+}
+.dates{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin-top:1%;
+  color:#6B768C;
+}
+.date{
+  margin-top:8%;
 }
 .contentSecondRow{
   width: 100%;
@@ -90,7 +148,7 @@
 .forecastContainerValues{
   width:36%;
   height:71%;
-  -webkit-box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23); 
+ 
   box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
   border-radius:8px;
 }
@@ -135,10 +193,106 @@
 .confirmation{
   width:36%;
   height:71%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 4%;
-  -webkit-box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23); 
-  box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
   border-radius:8px;
 }
+.confirmationInput{
+  width:100%;
+  height:30%;
+  border:1px solid #A3AAB7;
+ 
+  box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
+  border-radius: 8px;
+}
+.confirmationSubmit{
+  width:100%;
+  height:30%;
+  display: flex;
+  background: #15DAAB;
+ 
+  box-shadow: 3px 2px 15px -4px rgba(0,0,0,0.23);
+  border-radius: 8px;
+}
+.confirmationSubmitTitle{
+  margin: auto;
+  color:white;
+}
 
-
+.selectBoxHeader{
+  width:100%;
+  height: 100%;
+  display: flex;
+}
+.selectBoxItem{
+  margin-left:6%;
+  margin-top:1%;
+  font-size:14px;
+  font-weight: normal;
+}
+.selectBoxItem:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+.selectBoxArrow{
+  width:30px;
+  height: 30px;
+  border-radius:5px;
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+}
+.selectBoxArrowDown{
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #fff;
+}
+.selectBoxArrowUp{
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+.selectBoxItem{
+  margin-left:6%;
+  margin-top:1%;
+  font-size:14px;
+  font-weight: normal;
+}
+.selectBoxItem:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+.selectBoxArrow{
+  width:30px;
+  height: 30px;
+  border-radius:5px;
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa;
+}
+.selectBoxArrowDown{
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #fff;
+}
+.selectBoxArrowUp{
+  width:0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+}
